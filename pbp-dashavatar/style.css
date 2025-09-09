@@ -1,0 +1,323 @@
+/* UNIVERSAL */
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "David Libre", serif;
+}
+
+/* TEXT STYLES */
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #001E23;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #001E23;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #001E23;
+}
+
+h4 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #001E23;
+}
+
+
+p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #001E23;
+    line-height: 1.5;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content:space-between;
+    background: linear-gradient(0.1turn, #FFE6C0 75%, #F7C7B3 90%);
+    background-color: #FFE6C0;
+    padding: 12px 32px 12px 32px;
+    margin: 0px;
+}
+
+.header-left {
+    padding: 12px;
+    margin: 0px;
+    color: #001E23;
+    background: none;
+}
+
+.header-right {
+    padding: 12px 0px 0px 0px;
+    margin: 0px;
+    color: #001E23;
+    background: none;
+}
+
+.header-nav-links{
+    font-weight: 500;
+    color: #001E23;
+    font-size: 1.25rem;
+    padding: 0px;
+    margin: 0px;
+    gap: 24px;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.header-nav-links a {
+    text-decoration: none;
+    color: #001E23;
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(0.5turn, #FFE6C0 0%, #FFE6C0 90%);
+}
+
+.hero-left {
+display: flex;
+flex-direction: column;
+flex: 1 0 45.5%;
+margin: 0px;
+width: 80%;
+padding: 32px 32px 64px 48px;
+gap: 32px;
+background-color: #FFE6C0;
+z-index: 1;
+}
+
+.hero-right {
+flex: 1 0 50%;
+margin-left: -20px;
+width: 20%;;
+display: flex;
+justify-content: end;
+background: linear-gradient(0.1turn, #FFE6C0 90%,#FFE6C0 95%, #ffc1a8 100%);
+z-index: 2;
+}
+
+/* Media queries To stack hero elements and swap the images for smaller screens*/
+@media screen and (max-width: 1366px) {
+    .hero-left {
+        width: 100%;
+        padding: 32px 32px 64px 32px;
+        border-radius: 0 0 32px 0;
+    }
+
+    .hero-right {
+        width: 100%;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 0 24px 0;
+        background: linear-gradient(0.5turn,#ffc1a8 0%,  #FFE6C0 35%, #4B8B97 80%);
+        border-radius: 24px 0 0 0;
+
+    }
+
+    .hero-right img {
+        display: none; /* Hide the large image */
+    }
+
+    .hero-img-small {
+        display: block; 
+        width: 95%;
+        height: 600px;
+        background-image: url('./images/bg-vishnu-small.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+/* AVATAR GRID */
+
+.avatar-section-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 48px 96px;
+    gap: 24px;
+    text-align: center;
+    background-color: #4B8B97;
+    
+}
+
+
+.avatar-grid {
+    margin: 0px;
+    padding: 12px 12px 120px 12px;
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #4B8B97;
+}
+
+.avatar-card {
+    margin: 0px;
+    padding: 12px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    max-width: 240px;
+}
+
+.avatar-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FEDCCF;
+}
+
+.avatar-english-name {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.avatar-caption {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.yuga-name-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 4px 0px 0px 0px;
+}
+
+.yuga-name {
+    margin: 0px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+/* INTERPRETATIONS */
+
+.interpretations-container {
+    padding: 160px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    background: linear-gradient(0.525turn, #00353E 0%, #020505 80% );
+    color:#389FB3;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.interpretations-container .big {
+    font-size: 3rem;
+}
+
+.interpretations-container .small {
+    font-size: 1.25rem;
+}
+
+/* FOOTER */
+
+
+.read-more-container
+{
+    background-color: #020505;
+    padding: 0px 120px;
+}
+
+.read-more-box {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 140px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 24px;
+    gap: 24px;
+    background-color: #020505;
+    border:#389FB3 solid 1px;
+    border-radius: 24px;
+}
+
+.read-more-left, .read-more-left h4, .read-more-left p  {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    color: #389FB3;
+    justify-items: end;
+}
+
+
+.read-more-right button, .read-more-right a {
+    display: flex;
+    flex: 0 0 1;
+    margin: 0px;
+    padding: 12px 24px;
+    background-color: #4B8B97;
+    border: none;
+    border-radius: 12px;
+    color:#020505;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+    
+
+.footer {
+    display: flex;
+    background-color: #020505;
+    color:#2c5c5c;
+    padding: 24px 12px 64px 12px;
+    justify-content: center;
+}
+
+.footer a {
+    font-size: 0.875rem;
+    text-decoration: underline;
+    color:#2c5c5c;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.footer p {
+    font-size: 0.875rem;
+    color:#2c5c5c;
+    margin: 0px;
+    padding: 0px;
+}
