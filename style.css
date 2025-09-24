@@ -124,7 +124,7 @@ background: linear-gradient(0.1turn, #FFE6C0 90%,#FFE6C0 95%, #ffc1a8 100%);
 /* z-index: 2; */
 }
 
-/* Media queries To stack hero elements and swap the images for smaller screens*/
+/* Media queries to stack hero elements and swap the images for smaller screens*/
 @media screen and (max-width: 1366px) {
     .hero-left {
         width: 100%;
@@ -165,7 +165,7 @@ background: linear-gradient(0.1turn, #FFE6C0 90%,#FFE6C0 95%, #ffc1a8 100%);
     display: flex;
     flex-direction: column;
     margin: 0px;
-    padding: 48px 96px;
+    padding: 48px 60px;
     gap: 24px;
     text-align: center;
     background-color: #4B8B97;
